@@ -1,0 +1,10 @@
+.icon {
+  height: 50px;
+  width: 50px;
+}
+
+.onlyStroke * {
+  fill: none !important;
+  stroke: currentColor !important;
+  stroke-width: 2 !important; /* 👈 outline thickness */
+}
