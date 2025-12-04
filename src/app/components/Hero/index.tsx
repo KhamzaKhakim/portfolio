@@ -1,15 +1,32 @@
+"use client";
 import { Button } from "../ui/button";
 import Linkedin from "@icons/linkedin.svg";
 import Github from "@icons/github.svg";
 import Telegram from "@icons/telegram.svg";
 import Gmail from "@icons/gmail.svg";
 import Link from "next/link";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { TextPlugin } from "gsap/TextPlugin";
+import { useRef } from "react";
+
+gsap.registerPlugin(useGSAP, TextPlugin);
 
 export default function Hero() {
+  const ref = useRef<HTMLDivElement | null>(null);
+  useGSAP(
+    () => {
+      gsap.from("#name", {
+        text: { value: "Hello world! I&apos;m ...", delimiter: " " },
+        duration: 2,
+      });
+    },
+    { scope: ref }
+  );
   return (
     <div className={`h-screen flex flex-col items-center justify-center `}>
-      <div>
-        <h1 className="text-7xl m-6 text-center font-extrabold">
+      <div ref={ref}>
+        <h1 className="text-7xl m-6 text-center font-extrabold" id="name">
           Hi, I&apos;m Khamza Khakim
         </h1>
         <h3 className="text-center text-2xl font-bold text-gray-500 m-6">
