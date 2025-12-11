@@ -20,7 +20,8 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "@icons/*": ["./assets/icons/*"]
+      "@icons/*": ["./assets/icons/*"],
+      "@images/*": ["./assets/images/*"]
     }
   },
   "include": [
