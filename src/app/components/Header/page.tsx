@@ -14,7 +14,7 @@ import { Separator } from "../ui/separator";
 export function Header() {
   return (
     <div>
-      <div className="h-16 flex items-center justify-between mx-8 my-2">
+      <div className="h-16 flex items-center justify-between mx-16 my-2">
         <Link href="/">
           <div className={`flex flex-col`}>
             <h1 className="text-2xl">Khamza</h1>
