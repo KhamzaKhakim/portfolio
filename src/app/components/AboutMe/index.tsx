@@ -10,38 +10,57 @@ import { Separator } from "../ui/separator";
 
 export default function AboutMe() {
   return (
-    <div className="space-y-4 max-w-200 font-semibold">
-      <p className="flex">
-        Hi 👋 my name is&nbsp;
-        <span className="font-extrabold"> Khamza Khakim</span>.
-        <span className="ml-auto inline-block text-sm">Astana, Kazakhstan</span>
+    <div className="space-y-4 max-w-200 relative">
+      <p className="absolute hidden text-sm right-0  whitespace-nowrap sm:block">
+        📍 Astana, Kazakhstan
       </p>
+      <div className="space-y-2">
+        <p>
+          Hi 👋 my name is{" "}
+          <span className="font-extrabold"> Khamza Khakim</span>
+        </p>
+        <p className="text-sm sm:hidden">📍 Astana, Kazakhstan</p>
+      </div>
       <p>
-        I&apos;m a developer who likes building the entire web — not just the
-        UI, not just the backend, but everything in between. I enjoy having full
-        control over how things work and how they look. I love OOP maybe a bit
-        too much, yet I still willingly write React every day and somehow enjoy
-        it.
+        I build end-to-end web applications with care for both architecture and
+        user experience. I enjoy working across the stack, designing clean
+        systems, and turning ideas into products that feel solid and
+        intentional.
       </p>
       <div className="flex items-center gap-x-4">
         <p>Contact Me: </p>
         <div className="flex gap-x-2">
-          <Button size="icon">
-            <Link href={"/blog"}>
+          <Button
+            size="icon"
+            className="transform transition duration-300 hover:scale-110"
+          >
+            <Link
+              href={"/blog"}
+              className="transform transition duration-300 hover:scale-110"
+            >
               <Github className="size-6" />
             </Link>
           </Button>
-          <Button size="icon">
+          <Button
+            size="icon"
+            className="transform transition duration-300 hover:scale-110"
+          >
             <Link href={"/blog"}>
               <Linkedin className="size-6" />
             </Link>
           </Button>
-          <Button size="icon">
+          <Button
+            size="icon"
+            className="transform transition duration-300 hover:scale-110"
+          >
             <Link href={"/blog"}>
               <Telegram className="size-6" />
             </Link>
           </Button>
-          <Button size="icon">
+          <Button
+            size="icon"
+            className="transform transition duration-300 hover:scale-110"
+          >
             <Link href={"/blog"}>
               <Gmail className="size-6" />
             </Link>

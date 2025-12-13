@@ -3,7 +3,7 @@ import Stack from "./components/Stack/page";
 
 export default function Home() {
   return (
-    <div className="mx-16 my-8 flex flex-col items-center gap-y-6">
+    <div className="mx-16 my-8 flex flex-col items-center gap-y-6 font-semibold">
       <AboutMe />
       <Stack />
     </div>
