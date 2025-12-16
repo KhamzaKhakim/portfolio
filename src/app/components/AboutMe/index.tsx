@@ -38,7 +38,7 @@ export default function AboutMe() {
               href={"/blog"}
               className="transform transition duration-300 hover:scale-110"
             >
-              <Github className="size-6" />
+              <Github className="size-6" fill="var(--primary)" />
             </Link>
           </Button>
           <Button
@@ -46,7 +46,7 @@ export default function AboutMe() {
             className="transform transition duration-300 hover:scale-110"
           >
             <Link href={"/blog"}>
-              <Linkedin className="size-6" />
+              <Linkedin className="size-6" fill="var(--primary)" />
             </Link>
           </Button>
           <Button
@@ -54,7 +54,7 @@ export default function AboutMe() {
             className="transform transition duration-300 hover:scale-110"
           >
             <Link href={"/blog"}>
-              <Telegram className="size-6" />
+              <Telegram className="size-6" fill="var(--primary)" />
             </Link>
           </Button>
           <Button
@@ -62,7 +62,7 @@ export default function AboutMe() {
             className="transform transition duration-300 hover:scale-110"
           >
             <Link href={"/blog"}>
-              <Gmail className="size-6" />
+              <Gmail className="size-6" fill="var(--primary)" />
             </Link>
           </Button>
         </div>
