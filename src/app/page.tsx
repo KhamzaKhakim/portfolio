@@ -1,4 +1,5 @@
 import AboutMe from "./components/AboutMe";
+import Experience from "./components/Experience";
 import Stack from "./components/Stack/page";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <div className="mx-16 my-8 flex flex-col items-center gap-y-6 font-semibold">
       <AboutMe />
       <Stack />
+      <Experience />
     </div>
   );
 }
