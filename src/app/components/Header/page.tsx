@@ -8,7 +8,7 @@ import Link from "next/link";
 // import Telegram from "@icons/telegram.svg";
 
 import { ThemeButton } from "../theme-button";
-import { Button } from "../ui/button";
+// import { Button } from "../ui/button";
 import { Separator } from "../ui/separator";
 
 export function Header() {
@@ -22,9 +22,9 @@ export function Header() {
           </div>
         </Link>
         <div className="flex gap-x-2">
-          <Button>
+          {/* <Button>
             <Link href={"/blog"}>Blog</Link>
-          </Button>
+          </Button> */}
           <ThemeButton />
         </div>
       </div>

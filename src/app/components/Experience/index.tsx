@@ -50,15 +50,15 @@ const experiences: Experience[] = [
       },
     ],
   },
-  {
-    id: "2",
-    company: "Astana IT University",
-    role: "Graduate Project — Kitaphub",
-    period: "2021 - 2024",
-    description:
-      "Built a book e-commerce platform with ML-based recommendation system using Java backend and React frontend.",
-    projects: [],
-  },
+  // {
+  //   id: "2",
+  //   company: "Astana IT University",
+  //   role: "Graduate Project — Kitaphub",
+  //   period: "2021 - 2024",
+  //   description:
+  //     "Built a book e-commerce platform with ML-based recommendation system using Java backend and React frontend.",
+  //   projects: [],
+  // },
 ];
 
 export function WorkExperience() {
@@ -101,7 +101,7 @@ export function WorkExperience() {
                       <div className="absolute -left-3 top-1/2 -translate-y-1/2 h-2.5 w-2.5 rounded-full border-2 bg-background border-gray-400" />
 
                       {/* Project content card */}
-                      <div className="rounded-lg border border-border bg-muted/30 p-3 transition-colors hover:bg-muted/50">
+                      <div className="rounded-lg border border-border bg-card p-3 transition-colors hover:bg-card/30">
                         <h4 className="text-md font-semibold text-foreground">
                           {project.name}
                         </h4>
