@@ -1,7 +1,7 @@
-import AboutMe from "./components/AboutMe";
-import Experience from "./components/Experience";
-import Projects from "./components/Projects";
-import Stack from "./components/Stack/page";
+import AboutMe from "@/components/AboutMe";
+import Experience from "@/components/Experience";
+import Projects from "@/components/Projects";
+import Stack from "@/components/Stack/page";
 
 export default function Home() {
   return (

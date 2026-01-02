@@ -1,7 +1,7 @@
 import { JetBrains_Mono, Manrope } from "next/font/google";
 
-import { Header } from "./components/Header/page";
-import { ThemeProvider } from "./components/theme-provider";
+import { Header } from "@/components/Header/page";
+import { ThemeProvider } from "@/components/theme-provider";
 
 import type { Metadata } from "next";
 
@@ -30,7 +30,7 @@ export default function RootLayout({
       <body className={`${jetBrainsMono.className} antialiased`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >

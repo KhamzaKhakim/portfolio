@@ -69,7 +69,7 @@ export function WorkExperience() {
           {/* Git tree lines */}
           <div className="relative flex w-6 flex-col items-center">
             {/* Node dot */}
-            <div className="z-10 h-4 w-4 rounded-full border-2 border-gray-400 bg-background shadow-sm translate-y-[30%]" />
+            <div className="z-5 h-4 w-4 rounded-full border-2 border-gray-400 bg-background shadow-sm translate-y-[30%]" />
 
             <div className="absolute left-1/2 top-4 h-full w-0.5 -translate-x-1/2 bg-border" />
           </div>

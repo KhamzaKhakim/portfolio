@@ -1,19 +1,12 @@
 import Link from "next/link";
 
-// import { jetBrainsMono } from "@/app/layout";
-
-// import Github from "@icons/github.svg";
-// import Gmail from "@icons/gmail.svg";
-// import Linkedin from "@icons/linkedin.svg";
-// import Telegram from "@icons/telegram.svg";
-
 import { ThemeButton } from "../theme-button";
 import { Button } from "../ui/button";
 import { Separator } from "../ui/separator";
 
 export function Header() {
   return (
-    <div>
+    <div className="sticky top-0 z-10 backdrop-blur-xl">
       <div className="h-16 flex items-center justify-between mx-8 sm:mx-16 my-2">
         <Link href="/">
           <div className={`flex flex-col`}>
