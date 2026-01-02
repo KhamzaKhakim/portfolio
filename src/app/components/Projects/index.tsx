@@ -49,14 +49,15 @@ function Project() {
         </div>
         <Drawer>
           <DrawerTrigger asChild>
-            <Button className="w-full">Learn more</Button>
+            <Button className="w-full hover:scale-105" variant={"secondary"}>
+              Learn more
+            </Button>
           </DrawerTrigger>
-          <DrawerContent>
-            <div className="mx-auto w-full">
+          <DrawerContent className="">
+            <div>
               <DrawerHeader>
                 <DrawerTitle>KitapHub</DrawerTitle>
               </DrawerHeader>
-              <div className="p-4 pb-0">Hello</div>
             </div>
           </DrawerContent>
         </Drawer>
