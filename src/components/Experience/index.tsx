@@ -3,7 +3,9 @@ import { Separator } from "../ui/separator";
 export default function Experience() {
   return (
     <div className="max-w-200 w-full space-y-4">
-      <h2 className="font-extrabold mb-4">Experience:</h2>
+      <h2 className="font-extrabold mb-4 scroll-mt-26" id="experience">
+        Experience:
+      </h2>
 
       <WorkExperience />
 
@@ -101,7 +103,7 @@ export function WorkExperience() {
                       <div className="absolute -left-3 top-1/2 -translate-y-1/2 h-2.5 w-2.5 rounded-full border-2 bg-background border-gray-400" />
 
                       {/* Project content card */}
-                      <div className="rounded-lg border border-border bg-card p-3 transition-colors hover:bg-card/30">
+                      <div className="rounded-lg border border-border bg-card p-3 transition-colors hover:bg-card-hover dark:hover:bg-card/30">
                         <h4 className="text-md font-semibold text-foreground">
                           {project.name}
                         </h4>

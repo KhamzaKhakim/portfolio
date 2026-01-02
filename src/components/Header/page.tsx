@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 
 import { ThemeButton } from "../theme-button";
@@ -15,6 +17,28 @@ export function Header() {
           </div>
         </Link>
         <div className="flex gap-x-2">
+          <div className="flex mr-6">
+            <Button
+              variant="link"
+              onClick={() => {
+                document
+                  .getElementById("experience")
+                  ?.scrollIntoView({ behavior: "smooth", block: "start" });
+              }}
+            >
+              Experience
+            </Button>
+            <Button
+              variant="link"
+              onClick={() => {
+                document
+                  .getElementById("projects")
+                  ?.scrollIntoView({ behavior: "smooth", block: "start" });
+              }}
+            >
+              Projects
+            </Button>
+          </div>
           <Button asChild>
             <a download href="Khamza_CV.pdf">
               Download CV
