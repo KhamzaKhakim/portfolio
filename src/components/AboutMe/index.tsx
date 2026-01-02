@@ -14,10 +14,14 @@ export default function AboutMe() {
       <p className="absolute hidden text-sm right-0  whitespace-nowrap sm:block">
         📍 Astana, Kazakhstan
       </p>
-      <div className="space-y-2">
+      <div className="space-y-2 group">
         <p>
-          Hi 👋 my name is{" "}
-          <span className="font-extrabold"> Khamza Khakim</span>
+          Hi&nbsp;
+          <span className="text-xl inline-block transition-transform duration-300 group-hover:[animation:var(--animate-wave)]">
+            👋
+          </span>
+          &nbsp;my name is&nbsp;
+          <span className="font-extrabold">Khamza Khakim</span>
         </p>
         <p className="text-sm sm:hidden">📍 Astana, Kazakhstan</p>
       </div>
