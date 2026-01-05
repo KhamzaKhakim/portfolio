@@ -17,7 +17,7 @@ export function Header() {
           </div>
         </Link>
         <div className="flex gap-x-2">
-          <div className="flex mr-6">
+          <div className="mr-6 hidden sm:flex">
             <Button
               variant="link"
               onClick={() => {

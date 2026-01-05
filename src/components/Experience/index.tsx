@@ -103,7 +103,7 @@ export function WorkExperience() {
                       <div className="absolute -left-3 top-1/2 -translate-y-1/2 h-2.5 w-2.5 rounded-full border-2 bg-background border-gray-400" />
 
                       {/* Project content card */}
-                      <div className="rounded-lg border border-border bg-card p-3 transition-colors hover:bg-card-hover dark:hover:bg-card/30">
+                      <div className="rounded-lg border border-border bg-card p-3 transition-colors hover:bg-card-hover">
                         <h4 className="text-md font-semibold text-foreground">
                           {project.name}
                         </h4>

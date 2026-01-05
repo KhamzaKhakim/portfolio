@@ -91,6 +91,7 @@
   --background: #303446;
   --foreground: oklch(0.985 0 0);
   --card: #414559;
+  --card-hover: #3d4053;
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(20.463% 0.00002 271.152);
   --popover-foreground: oklch(0.985 0 0);
@@ -129,6 +130,12 @@
   body,
   #__next {
     @apply bg-background text-foreground;
+  }
+
+  theme-transition,
+  .theme-transition * {
+    transition: background-color 280ms ease, color 280ms ease,
+      border-color 280ms ease, fill 280ms ease, stroke 280ms ease !important;
   }
 }
 

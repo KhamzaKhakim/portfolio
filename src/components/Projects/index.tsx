@@ -19,11 +19,11 @@ const projects = [1, 2, 3, 4];
 
 export default function Projects() {
   return (
-    <div className="max-w-200 w-full ">
+    <div className="max-w-200 w-full">
       <h2 className="font-extrabold mb-4" id="projects">
         Projects:
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4 justify-items-center">
         {projects.map((p) => (
           <Project key={p} />
         ))}
@@ -35,7 +35,7 @@ export default function Projects() {
 
 function Project() {
   return (
-    <Card className="hover:bg-card-hover  dark:hover:bg-card/30">
+    <Card className="hover:bg-card-hover max-w-100">
       <CardHeader>
         <CardTitle>Kitaphub</CardTitle>
         <CardDescription>
@@ -51,7 +51,7 @@ function Project() {
         </div>
         <Drawer>
           <DrawerTrigger asChild>
-            <Button className="w-full hover:scale-105" variant={"secondary"}>
+            <Button className="w-full hover:scale-105 " variant={"secondary"}>
               Learn more
             </Button>
           </DrawerTrigger>
