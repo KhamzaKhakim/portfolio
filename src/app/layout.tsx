@@ -27,6 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <meta name="theme-color" content="var(--bg-background)" />
+      </head>
       <body className={`${jetBrainsMono.className} antialiased`}>
         <ThemeProvider
           attribute="class"
