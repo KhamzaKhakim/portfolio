@@ -28,7 +28,6 @@ export default function Projects() {
           <Project key={p} />
         ))}
       </div>
-      <Separator />
     </div>
   );
 }
@@ -60,6 +59,11 @@ function Project() {
               <DrawerHeader>
                 <DrawerTitle>KitapHub</DrawerTitle>
               </DrawerHeader>
+            </div>
+            <div className="grid grid-cols-3 divide-x-2 divide-border gap-4">
+              <div className="mx-4 h-20">Hello</div>
+              <div className="mx-4 h-20">Hello</div>
+              <div className="mx-4 h-20">Hello</div>
             </div>
           </DrawerContent>
         </Drawer>

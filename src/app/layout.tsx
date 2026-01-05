@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import type { Metadata } from "next";
 
 import "./globals.css";
+import { Footer } from "@/components/Footer";
 
 export const manrope = Manrope({
   weight: "400",
@@ -40,6 +41,7 @@ export default function RootLayout({
           <div className="min-h-screen flex flex-col">
             <Header />
             {children}
+            <Footer />
           </div>
         </ThemeProvider>
       </body>

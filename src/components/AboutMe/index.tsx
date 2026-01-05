@@ -6,7 +6,6 @@ import Linkedin from "@icons/linkedin.svg";
 import Telegram from "@icons/telegram.svg";
 
 import { Button } from "../ui/button";
-import { Separator } from "../ui/separator";
 
 export default function AboutMe() {
   return (
@@ -71,8 +70,6 @@ export default function AboutMe() {
           </Button>
         </div>
       </div>
-
-      <Separator />
     </div>
   );
 }

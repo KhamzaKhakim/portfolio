@@ -9,9 +9,9 @@ import { Separator } from "../ui/separator";
 export function Header() {
   return (
     <div className="sticky top-0 z-10 backdrop-blur-xl">
-      <div className="h-16 flex items-center justify-between mx-8 sm:mx-16 my-2">
+      <div className="h-16 flex items-center justify-between mx-8 sm:mx-20 my-2">
         <Link href="/">
-          <div className={`flex flex-col`}>
+          <div className="flex flex-col">
             <h1 className="text-2xl">Khamza</h1>
             <h1 className="text-2xl">Khakim</h1>
           </div>

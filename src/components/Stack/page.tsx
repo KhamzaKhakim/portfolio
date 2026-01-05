@@ -18,8 +18,6 @@ import Tanstack from "@icons/tanstack.svg";
 import Trpc from "@icons/trpc.svg";
 import TypeScript from "@icons/typescript.svg";
 
-import { Separator } from "../ui/separator";
-
 export default function Stack() {
   return (
     <div className="max-w-200 w-full space-y-4">
@@ -83,7 +81,6 @@ export default function Stack() {
           <Nginx />
         </StackIcon>
       </div>
-      <Separator />
     </div>
   );
 }
