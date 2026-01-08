@@ -1,3 +1,4 @@
+import ProjectsButton from "../ProjectsButton";
 import { Button } from "../ui/button";
 import {
   Card,
@@ -6,16 +7,36 @@ import {
   CardHeader,
   CardTitle,
 } from "../ui/card";
-import {
-  Drawer,
-  DrawerContent,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "../ui/drawer";
 import { Separator } from "../ui/separator";
 
-const projects = [1, 2, 3, 4];
+type ProjectType = {
+  title: string;
+  description: string;
+  technologies: string;
+  links: {
+    text: string;
+    url: string;
+  }[];
+};
+const projects: ProjectType[] = [
+  {
+    title: "Kitaphub",
+    description:
+      "Full-stack book exchange platform with a personalized recommendation system based on user reading history.",
+    technologies:
+      "Java, Spring Boot, React, Tailwind, Python, PyTorch, AWS, Postgres",
+    links: [
+      { text: "Go to Frontend Repository", url: "asd" },
+      { text: "Go to Backend Repository", url: "asd" },
+    ],
+  },
+  {
+    title: "Chessboard",
+    description: "Simple html canvas chessboard and game implementation",
+    technologies: "HTML, CSS, JS",
+    links: [{ text: "Go to Repository", url: "asd" }],
+  },
+];
 
 export default function Projects() {
   return (
@@ -25,48 +46,27 @@ export default function Projects() {
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4 justify-items-center">
         {projects.map((p) => (
-          <Project key={p} />
+          <Project key={p.title} project={p} />
         ))}
       </div>
     </div>
   );
 }
 
-function Project() {
+function Project({ project }: { project: ProjectType }) {
   return (
-    <Card className="hover:bg-card-hover max-w-100">
+    <Card className="hover:bg-card-hover max-w-100 w-full">
       <CardHeader>
-        <CardTitle>Kitaphub</CardTitle>
-        <CardDescription>
-          Bofull-stack book exchange platform with a personalized recommendation
-          system based on user reading history.
-        </CardDescription>
+        <CardTitle>{project.title}</CardTitle>
+        <CardDescription>{project.description}</CardDescription>
       </CardHeader>
       <Separator />
-      <CardContent>
+      <CardContent className="mt-auto">
         <div className="text-xs mb-4">
-          <span className="font-bold">Technologies:</span> Java, Spring Boot,
-          React, Tailwind, Python, PyTorch, AWS, Postgres
+          <span className="font-bold">Technologies:&nbsp;</span>
+          {project.technologies}
         </div>
-        <Drawer>
-          <DrawerTrigger asChild>
-            <Button className="w-full hover:scale-105 " variant={"secondary"}>
-              Learn more
-            </Button>
-          </DrawerTrigger>
-          <DrawerContent className="">
-            <div>
-              <DrawerHeader>
-                <DrawerTitle>KitapHub</DrawerTitle>
-              </DrawerHeader>
-            </div>
-            <div className="grid grid-cols-3 divide-x-2 divide-border gap-4">
-              <div className="mx-4 h-20">Hello</div>
-              <div className="mx-4 h-20">Hello</div>
-              <div className="mx-4 h-20">Hello</div>
-            </div>
-          </DrawerContent>
-        </Drawer>
+        <ProjectsButton links={project.links} />
       </CardContent>
     </Card>
   );

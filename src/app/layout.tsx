@@ -1,12 +1,12 @@
 import { JetBrains_Mono, Manrope } from "next/font/google";
 
+import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header/page";
 import { ThemeProvider } from "@/components/theme-provider";
 
 import type { Metadata } from "next";
 
 import "./globals.css";
-import { Footer } from "@/components/Footer";
 
 export const manrope = Manrope({
   weight: "400",
