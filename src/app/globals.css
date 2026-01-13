@@ -162,3 +162,21 @@
     transform: rotate(0deg);
   }
 }
+::view-transition-old(root),
+::view-transition-old(header) {
+  animation: none;
+}
+
+::view-transition-new(root),
+::view-transition-new(header) {
+  animation: expandCircle 0.6s cubic-bezier(0.59, 0.33, 0.42, 0.9) forwards;
+}
+
+@keyframes expandCircle {
+  from {
+    clip-path: circle(0px at var(--center-x) var(--center-y));
+  }
+  to {
+    clip-path: circle(120vmax at var(--center-x) var(--center-y));
+  }
+}

@@ -8,7 +8,10 @@ import { Separator } from "../ui/separator";
 
 export function Header() {
   return (
-    <div className="sticky top-0 z-10 backdrop-blur-xl">
+    <div
+      className="sticky top-0 z-10 backdrop-blur-xl"
+      style={{ viewTransitionName: "header" }}
+    >
       <div className="h-16 flex items-center justify-between mx-8 sm:mx-20 my-2">
         <Link href="/">
           <div className="flex flex-col">
