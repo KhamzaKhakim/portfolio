@@ -1,5 +1,4 @@
 import ProjectsButton from "../ProjectsButton";
-import { Button } from "../ui/button";
 import {
   Card,
   CardContent,
@@ -32,7 +31,8 @@ const projects: ProjectType[] = [
   },
   {
     title: "Chessboard",
-    description: "Simple html canvas chessboard and game implementation",
+    description:
+      "HTML Canvas-Based interactive chessboard with complete game logic and player interaction.",
     technologies: "HTML, CSS, JS",
     links: [{ text: "Go to Repository", url: "asd" }],
   },
@@ -58,11 +58,15 @@ function Project({ project }: { project: ProjectType }) {
     <Card className="hover:bg-card-hover max-w-100 w-full">
       <CardHeader>
         <CardTitle>{project.title}</CardTitle>
-        <CardDescription>{project.description}</CardDescription>
+        <CardDescription>
+          <div className="text-sm line-clamp-3 leading-relaxed min-h-17">
+            {project.description}
+          </div>
+        </CardDescription>
       </CardHeader>
       <Separator />
       <CardContent className="mt-auto">
-        <div className="text-xs mb-4">
+        <div className="text-xs mb-4 line-clamp-2 leading-relaxed min-h-9">
           <span className="font-bold">Technologies:&nbsp;</span>
           {project.technologies}
         </div>
