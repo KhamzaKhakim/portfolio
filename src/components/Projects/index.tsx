@@ -25,8 +25,14 @@ const projects: ProjectType[] = [
     technologies:
       "Java, Spring Boot, React, Tailwind, Python, PyTorch, AWS, Postgres",
     links: [
-      { text: "Go to Frontend Repository", url: "asd" },
-      { text: "Go to Backend Repository", url: "asd" },
+      {
+        text: "Go to Frontend Repository",
+        url: "https://github.com/KhamzaKhakim/kitaphub-frontend",
+      },
+      {
+        text: "Go to Backend Repository",
+        url: "https://github.com/KhamzaKhakim/kitaphub",
+      },
     ],
   },
   {
@@ -34,7 +40,24 @@ const projects: ProjectType[] = [
     description:
       "HTML Canvas-Based interactive chessboard with complete game logic and player interaction.",
     technologies: "HTML, CSS, JS",
-    links: [{ text: "Go to Repository", url: "asd" }],
+    links: [
+      {
+        text: "Go to Repository",
+        url: "https://github.com/KhamzaKhakim/chessboard",
+      },
+    ],
+  },
+  {
+    title: "Portfolio",
+    description:
+      "This very project you're looking at—my personal portfolio page. Built to catch HR's eye—fingers crossed it works!",
+    technologies: "Next.js, Shadcn, Tailwind, Nginx",
+    links: [
+      {
+        text: "Go to Repository",
+        url: "https://github.com/KhamzaKhakim/portfolio",
+      },
+    ],
   },
 ];
 

@@ -18,7 +18,7 @@ export const jetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "My Profile",
+  title: "Khamza Khakim | Portfolio",
 };
 
 export default function RootLayout({
