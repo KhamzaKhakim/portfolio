@@ -43,7 +43,7 @@ export function Header() {
             </Button>
           </div>
           <Button asChild>
-            <a download href="Khamza_CV.pdf">
+            <a download href="Khamza_CV_2026.pdf">
               Download CV
             </a>
           </Button>
