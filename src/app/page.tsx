@@ -7,7 +7,7 @@ import { Separator } from "@/components/ui/separator";
 export default function Home() {
   return (
     <div className="flex justify-center">
-      <div className="max-w-200 mx-8 sm:mx-16 my-8 ">
+      <div className="max-w-200 mx-10 sm:mx-16 my-8">
         <div className="flex flex-col items-center gap-y-6 font-semibold scroll-smooth">
           <AboutMe />
           <Separator />

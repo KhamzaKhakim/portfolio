@@ -34,7 +34,7 @@ export default function RootLayout({
       <body className={`${jetBrainsMono.className} antialiased`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
