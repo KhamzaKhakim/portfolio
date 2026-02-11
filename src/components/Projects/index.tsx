@@ -1,4 +1,5 @@
 import ProjectsButton from "../ProjectsButton";
+import { Badge } from "../ui/badge";
 import {
   Card,
   CardContent,
@@ -12,6 +13,7 @@ type ProjectType = {
   title: string;
   description: string;
   technologies: string;
+  wip?: boolean;
   links: {
     text: string;
     url: string;
@@ -59,6 +61,19 @@ const projects: ProjectType[] = [
       },
     ],
   },
+  {
+    title: "FPL Components",
+    wip: true,
+    description:
+      "A collection of reusable UI components for building beautiful Fantasy Premier League (FPL) interfaces.",
+    technologies: "Bun, Next.js, Elysia",
+    links: [
+      {
+        text: "Go to Repository",
+        url: "https://github.com/KhamzaKhakim/fpl-components",
+      },
+    ],
+  },
 ];
 
 export default function Projects() {
@@ -80,7 +95,10 @@ function Project({ project }: { project: ProjectType }) {
   return (
     <Card className="hover:bg-card-hover max-w-100 w-full">
       <CardHeader>
-        <CardTitle>{project.title}</CardTitle>
+        <CardTitle>
+          {project.title}{" "}
+          {project.wip && <Badge variant="secondary">WIP</Badge>}
+        </CardTitle>
         <CardDescription>
           <div className="text-sm line-clamp-3 leading-relaxed min-h-17">
             {project.description}
