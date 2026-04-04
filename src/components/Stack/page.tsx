@@ -4,6 +4,7 @@ import Express from "@icons/express.svg";
 import Java from "@icons/java.svg";
 import JavaScript from "@icons/javascript.svg";
 import MongoDb from "@icons/mongodb.svg";
+import NestJs from "@icons/nestjs.svg";
 import NextJs from "@icons/nextdotjs.svg";
 import Nginx from "@icons/nginx.svg";
 import NodeJs from "@icons/nodedotjs.svg";
@@ -52,6 +53,9 @@ export default function Stack() {
         </StackIcon>
         <StackIcon text="Express.js">
           <Express />
+        </StackIcon>
+        <StackIcon text="NestJS">
+          <NestJs />
         </StackIcon>
         <StackIcon text="Tanstack">
           <Tanstack />

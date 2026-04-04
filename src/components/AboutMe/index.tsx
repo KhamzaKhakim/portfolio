@@ -21,7 +21,7 @@ export default function AboutMe() {
             👋
           </span>
           &nbsp;my name is&nbsp;
-          <span className="font-extrabold">Khamza Khakim</span>
+          <span className="font-extrabold">Khamza</span>
         </p>
         <p className="text-sm sm:hidden">📍 Astana, Kazakhstan</p>
       </div>
