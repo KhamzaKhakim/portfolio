@@ -74,6 +74,18 @@ const projects: ProjectType[] = [
       },
     ],
   },
+  {
+    title: "Hwaiting",
+    description:
+      "Chrome extension that automatically parses job applications into Google Sheets, using Gemini for data extraction.",
+    technologies: "CRXJS, Vite, HTML, CSS, JS",
+    links: [
+      {
+        text: "Go to Repository",
+        url: "https://github.com/KhamzaKhakim/hwaiting",
+      },
+    ],
+  },
 ];
 
 export default function Projects() {
