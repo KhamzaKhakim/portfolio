@@ -134,8 +134,12 @@
 
   theme-transition,
   .theme-transition * {
-    transition: background-color 280ms ease, color 280ms ease,
-      border-color 280ms ease, fill 280ms ease, stroke 280ms ease !important;
+    transition:
+      background-color 280ms ease,
+      color 280ms ease,
+      border-color 280ms ease,
+      fill 280ms ease,
+      stroke 280ms ease !important;
   }
 }
 
@@ -162,6 +166,12 @@
     transform: rotate(0deg);
   }
 }
+
+:root:active-view-transition .header {
+  backdrop-filter: none;
+  background-color: var(--background);
+}
+
 ::view-transition-old(root),
 ::view-transition-old(header) {
   animation: none;

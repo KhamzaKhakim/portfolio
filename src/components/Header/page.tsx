@@ -9,8 +9,8 @@ import { Separator } from "../ui/separator";
 export function Header() {
   return (
     <div
-      className="sticky top-0 z-10 backdrop-blur-xl"
-      style={{ viewTransitionName: "header" }}
+      className="header sticky top-0 z-10 backdrop-blur-xl"
+      // style={{ viewTransitionName: "header" }}
     >
       <div className="flex justify-center">
         <div className="h-16 mx-8 sm:mx-14 my-2 flex items-center w-200 justify-between">
