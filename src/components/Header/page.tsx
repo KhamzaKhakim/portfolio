@@ -4,6 +4,14 @@ import Link from "next/link";
 
 import { ThemeButton } from "../theme-button";
 import { Button } from "../ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "../ui/dialog";
 import { Separator } from "../ui/separator";
 
 export function Header() {
@@ -43,11 +51,20 @@ export function Header() {
                 Projects
               </Button>
             </div>
-            <Button asChild>
-              <a download href="Khamza_CV_2026.pdf">
-                Download CV
-              </a>
-            </Button>
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button variant="outline">View Resume</Button>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-3xl w-[95vw] h-[95vh] flex flex-col p-4">
+                <div className="flex-1 overflow-hidden rounded-md border">
+                  <iframe
+                    src="Khamza_CV_2026.pdf#toolbar=1&navpanes=0&scrollbar=0&zoom=page-fit&view=Fit"
+                    className="w-full h-full"
+                    title="CV"
+                  />
+                </div>
+              </DialogContent>
+            </Dialog>
             <ThemeButton />
           </div>
         </div>
