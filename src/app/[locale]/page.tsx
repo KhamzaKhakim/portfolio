@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl";
+
 import AboutMe from "@/components/AboutMe";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
@@ -5,6 +7,7 @@ import Stack from "@/components/Stack/page";
 import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
+  const t = useTranslations("HomePage");
   return (
     <div className="flex justify-center">
       <div className="max-w-200 mx-10 sm:mx-16 my-8">

@@ -1,8 +1,11 @@
 import { JetBrains_Mono, Manrope } from "next/font/google";
+import { notFound } from "next/navigation";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
 
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header/page";
 import { ThemeProvider } from "@/components/theme-provider";
+import { routing } from "@/i18n/routing";
 
 import type { Metadata } from "next";
 
@@ -21,11 +24,18 @@ export const metadata: Metadata = {
   title: "Khamza Khakim | Portfolio",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }>) {
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -38,11 +48,13 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="min-h-screen flex flex-col">
-            <Header />
-            {children}
-            <Footer />
-          </div>
+          <NextIntlClientProvider>
+            <div className="min-h-screen flex flex-col">
+              <Header />
+              {children}
+              <Footer />
+            </div>
+          </NextIntlClientProvider>
         </ThemeProvider>
       </body>
     </html>

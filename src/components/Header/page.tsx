@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 
+import { LanguageSwitcher } from "../LanguageSwitcher";
 import { ThemeButton } from "../theme-button";
 import { Button } from "../ui/button";
 import { Dialog, DialogContent, DialogTrigger } from "../ui/dialog";
@@ -56,6 +57,7 @@ export function Header() {
               </DialogContent>
             </Dialog>
             <ThemeButton />
+            <LanguageSwitcher />
           </div>
         </div>
       </div>

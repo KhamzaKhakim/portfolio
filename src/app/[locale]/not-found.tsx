@@ -1,5 +1,6 @@
-import CatTyping from "@images/cat-typing.gif";
 import Image from "next/image";
+
+import CatTyping from "@images/cat-typing.gif";
 
 export default function NotFound() {
   return (

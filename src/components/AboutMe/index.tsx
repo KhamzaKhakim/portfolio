@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 import Github from "@icons/github.svg";
 import Gmail from "@icons/gmail.svg";
@@ -9,19 +10,20 @@ import Telegram from "@icons/telegram.svg";
 import { Button } from "../ui/button";
 
 export default function AboutMe() {
+  const t = useTranslations();
   return (
     <div className="space-y-4 max-w-200 relative">
       <p className="absolute hidden text-sm right-0  whitespace-nowrap sm:block">
-        📍 Astana, Kazakhstan
+        📍 {t("location")}
       </p>
       <div className="space-y-2 group">
         <p>
-          Hi&nbsp;
+          {t("hi")}&nbsp;
           <span className="text-xl inline-block transition-transform duration-300 group-hover:[animation:var(--animate-wave)]">
             👋
           </span>
-          &nbsp;my name is&nbsp;
-          <span className="font-extrabold">Khamza</span>
+          &nbsp;{t("my_name_is")}&nbsp;
+          <span className="font-extrabold">{t("name")}</span>
         </p>
         <p className="text-sm sm:hidden">📍 Astana, Kazakhstan</p>
       </div>
