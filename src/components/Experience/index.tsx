@@ -1,8 +1,11 @@
+import { useTranslations } from "next-intl";
+
 export default function Experience() {
+  const t = useTranslations();
   return (
     <div className="max-w-200 w-full space-y-4">
       <h2 className="font-extrabold mb-4 scroll-mt-26" id="experience">
-        Experience:
+        {t("experience")}:
       </h2>
 
       <WorkExperience />

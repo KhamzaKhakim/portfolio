@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 import Github from "@icons/github.svg";
 import Gmail from "@icons/gmail.svg";
@@ -9,31 +10,27 @@ import Telegram from "@icons/telegram.svg";
 import { Button } from "../ui/button";
 
 export default function AboutMe() {
+  const t = useTranslations();
   return (
     <div className="space-y-4 max-w-200 relative">
       <p className="absolute hidden text-sm right-0  whitespace-nowrap sm:block">
-        📍 Astana, Kazakhstan
+        📍 {t("location")}
       </p>
       <div className="space-y-2 group">
         <p>
-          Hi&nbsp;
+          {t("hi")}&nbsp;
           <span className="text-xl inline-block transition-transform duration-300 group-hover:[animation:var(--animate-wave)]">
             👋
           </span>
-          &nbsp;my name is&nbsp;
-          <span className="font-extrabold">Khamza</span>
+          &nbsp;{t("my_name_is")}&nbsp;
+          <span className="font-extrabold">{t("name")}</span>
         </p>
         <p className="text-sm sm:hidden">📍 Astana, Kazakhstan</p>
       </div>
-      <p>
-        I build end-to-end web applications with care for both architecture and
-        user experience. I enjoy working across the stack, designing clean
-        systems, and turning ideas into products that feel solid and
-        intentional.
-      </p>
+      <p>{t("about_me_info")}</p>
       <div className="flex items-center justify-around flex-wrap gap-4 mt-8">
         <div className="flex items-center gap-x-4">
-          <p>Let`s connect: </p>
+          <p>{t("lets_connect")}: </p>
           <div className="flex gap-x-2">
             <Button
               size="icon"
@@ -65,7 +62,7 @@ export default function AboutMe() {
           </div>
         </div>
         <div className="flex items-center gap-x-4">
-          <p>Developer profiles: </p>
+          <p>{t("dev_profiles")}: </p>
           <div className="flex gap-x-2">
             <Button
               size="icon"

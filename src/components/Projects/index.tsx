@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl";
+
 import ProjectsButton from "../ProjectsButton";
 import { Badge } from "../ui/badge";
 import {
@@ -89,10 +91,11 @@ const projects: ProjectType[] = [
 ];
 
 export default function Projects() {
+  const t = useTranslations();
   return (
     <div className="max-w-200 w-full">
       <h2 className="font-extrabold mb-4 scroll-mt-26" id="projects">
-        Projects:
+        {t("projects")}:
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4 justify-items-center">
         {projects.map((p) => (
