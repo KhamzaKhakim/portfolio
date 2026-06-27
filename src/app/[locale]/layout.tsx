@@ -40,6 +40,13 @@ export default async function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="theme-color" content="var(--bg-background)" />
+
+        <link
+          rel="preload"
+          href="/Khamza_CV.pdf"
+          as="fetch"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className={`${jetBrainsMono.className} antialiased`}>
         <ThemeProvider
