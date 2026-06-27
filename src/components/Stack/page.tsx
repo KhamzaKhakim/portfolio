@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl";
+
 import Bun from "@icons/bun.svg";
 import Docker from "@icons/docker.svg";
 import Express from "@icons/express.svg";
@@ -20,9 +22,10 @@ import Trpc from "@icons/trpc.svg";
 import TypeScript from "@icons/typescript.svg";
 
 export default function Stack() {
+  const t = useTranslations();
   return (
     <div className="max-w-200 w-full space-y-4">
-      <h2 className="font-extrabold mb-4">Tech Stack:</h2>
+      <h2 className="font-extrabold mb-4">{t("tech_stack")}:</h2>
       <div className="flex gap-6 flex-wrap justify-center">
         <StackIcon text="JavaScript">
           <JavaScript />

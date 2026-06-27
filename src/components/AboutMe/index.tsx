@@ -27,15 +27,10 @@ export default function AboutMe() {
         </p>
         <p className="text-sm sm:hidden">📍 Astana, Kazakhstan</p>
       </div>
-      <p>
-        I build end-to-end web applications with care for both architecture and
-        user experience. I enjoy working across the stack, designing clean
-        systems, and turning ideas into products that feel solid and
-        intentional.
-      </p>
+      <p>{t("about_me_info")}</p>
       <div className="flex items-center justify-around flex-wrap gap-4 mt-8">
         <div className="flex items-center gap-x-4">
-          <p>Let`s connect: </p>
+          <p>{t("lets_connect")}: </p>
           <div className="flex gap-x-2">
             <Button
               size="icon"
@@ -67,7 +62,7 @@ export default function AboutMe() {
           </div>
         </div>
         <div className="flex items-center gap-x-4">
-          <p>Developer profiles: </p>
+          <p>{t("dev_profiles")}: </p>
           <div className="flex gap-x-2">
             <Button
               size="icon"
