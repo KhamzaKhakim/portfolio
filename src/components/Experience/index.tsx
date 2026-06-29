@@ -28,41 +28,38 @@ interface Experience {
   projects?: Project[];
 }
 
-const experiences: Experience[] = [
-  {
-    id: "1",
-    company: 'LLP "CMC Technologies"',
-    role: "Full-stack Developer",
-    period: "Oct 2022 - Oct 2025",
-    description:
-      "Key contributor to healthcare platforms, building scalable backend services, responsive UIs, and automated testing pipelines.",
-    projects: [
-      {
-        id: "1a",
-        name: "SmartEcg",
-        description:
-          "Built Spring Boot + React systems, achieved 100% unit/integration test coverage, integrated SOAP services, and developed notification service.",
-      },
-      {
-        id: "1b",
-        name: "E-medosmotr",
-        description:
-          "Led backend & frontend development: built scalable APIs, designed Drizzle + PostgreSQL schema, optimized queries, added Playwright E2E tests, and delivered responsive Next.js UIs",
-      },
-    ],
-  },
-  // {
-  //   id: "2",
-  //   company: "Astana IT University",
-  //   role: "Graduate Project — Kitaphub",
-  //   period: "2021 - 2024",
-  //   description:
-  //     "Built a book e-commerce platform with ML-based recommendation system using Java backend and React frontend.",
-  //   projects: [],
-  // },
-];
-
 export function WorkExperience() {
+  const t = useTranslations();
+  const experiences: Experience[] = [
+    {
+      id: "1",
+      company: t("company"),
+      role: t("role"),
+      period: t("period"),
+      description: t("description"),
+      projects: [
+        {
+          id: "1a",
+          name: "SmartEcg",
+          description: t("smart_ecg_description"),
+        },
+        {
+          id: "1b",
+          name: "E-medosmotr",
+          description: t("emedosmotr_description"),
+        },
+      ],
+    },
+    // {
+    //   id: "2",
+    //   company: "Astana IT University",
+    //   role: "Graduate Project — Kitaphub",
+    //   period: "2021 - 2024",
+    //   description:
+    //     "Built a book e-commerce platform with ML-based recommendation system using Java backend and React frontend.",
+    //   projects: [],
+    // },
+  ];
   return (
     <div className="space-y-0">
       {experiences.map((exp, expIndex) => (
