@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 import { LanguageSwitcher } from "../LanguageSwitcher";
 import { ThemeButton } from "../theme-button";
@@ -9,6 +10,7 @@ import { Dialog, DialogContent, DialogTrigger } from "../ui/dialog";
 import { Separator } from "../ui/separator";
 
 export function Header() {
+  const t = useTranslations();
   return (
     <div className="header sticky top-0 z-10 backdrop-blur-xl">
       <div className="flex justify-center">
@@ -29,7 +31,7 @@ export function Header() {
                     ?.scrollIntoView({ behavior: "smooth", block: "start" });
                 }}
               >
-                Experience
+                {t("experience")}
               </Button>
               <Button
                 variant="link"
@@ -39,12 +41,12 @@ export function Header() {
                     ?.scrollIntoView({ behavior: "smooth", block: "start" });
                 }}
               >
-                Projects
+                {t("projects")}
               </Button>
             </div>
             <Dialog>
               <DialogTrigger asChild>
-                <Button variant="outline">View Resume</Button>
+                <Button variant="outline">{t("view_resume")}</Button>
               </DialogTrigger>
               <DialogContent className="sm:max-w-3xl w-[95vw] h-[95vh] flex flex-col p-4">
                 <div className="flex-1 overflow-hidden rounded-md border">

@@ -9,5 +9,12 @@
   "dev_profiles": "Developer profiles",
   "tech_stack": "Tech Stack",
   "experience": "Experience",
-  "projects": "Projects"
+  "projects": "Projects",
+  "view_resume": "View Resume",
+  "company": "LLP \"CMC Technologies\"",
+  "role": "Full-stack Developer",
+  "period": "Oct 2022 - May 2026",
+  "description": "Key contributor to healthcare platforms, building scalable backend services, responsive UIs, and automated testing pipelines.",
+  "smart_ecg_description": "Built Spring Boot + React systems, achieved 100% unit/integration test coverage, integrated SOAP services, and developed notification service.",
+  "emedosmotr_description": "Backend & frontend development: built scalable APIs, designed Drizzle + PostgreSQL schema, optimized queries, added Playwright E2E tests, and delivered responsive Next.js UIs"
 }
