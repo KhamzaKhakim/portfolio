@@ -5,7 +5,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const jetBrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
+  subsets: ["latin", "cyrillic"],
+  style: ["normal", "italic"],
+  display: "block",
+  fallback: ["ui-monospace", "Menlo", "monospace"],
   variable: "--font-jetbrains-mono",
 });
 
@@ -29,7 +32,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
       </head>
-      <body className={`${jetBrainsMono.className} antialiased`}>
+      <body className={`${jetBrainsMono.className} ${jetBrainsMono.variable} antialiased`}>
         {children}
       </body>
     </html>
